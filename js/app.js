@@ -117,7 +117,7 @@ let initializationHelper = async (browser, $container, options) => {
 
     const $main = $('#igv-main')
 
-    createTrackWidgetsWithTrackRegistry($main, $('#igv-app-track-dropdown-menu'), $('#igv-app-dropdown-local-track-file-input'), $('#igv-app-dropdown-dropbox-track-file-button'), googleEnabled, $('#igv-app-dropdown-google-drive-track-file-button'), [ 'igv-app-encode-signal-modal', 'igv-app-encode-others-modal'], 'igv-app-track-from-url-modal', 'igv-app-track-select-modal', igv.xhr, igv.google, igv.GtexUtils, options.trackRegistryFile, async configurations => await browser.loadTrackList(configurations));
+    createTrackWidgetsWithTrackRegistry($main, $('#igv-app-track-dropdown-menu'), $('#igv-app-dropdown-local-track-file-input'), $('#igv-app-dropdown-dropbox-track-file-button'), googleEnabled, $('#igv-app-dropdown-google-drive-track-file-button'), [ 'igv-app-encode-signal-modal', 'igv-app-encode-others-modal'],['igv-app-custom-map-organoids-modal','igv-app-custom-map-fight-cancer-modal'], 'igv-app-track-from-url-modal', 'igv-app-track-select-modal', igv.xhr, igv.google, igv.GtexUtils, options.trackRegistryFile, async configurations => await browser.loadTrackList(configurations));
     
     $('#igv-app-session-save-button').on('click', () => {
 
